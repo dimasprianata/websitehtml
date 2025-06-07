@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pieeyy The Ide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pieeyy The Ide</h1>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#keranjang">Keranjang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="hero">
+    <h2>Selamat Datang di Pieeyy The Ide</h2>
+    <p>Toko kebutuhan rokok andalan Anda.</p>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="products">
+    <h2>Kategori Produk</h2>
+    <div class="product" data-name="Surya Pro" data-price="25000">
+      <img src="img/product_image.jpg" alt="Surya Pro">
+      <h3>Surya Pro</h3>
+      <p>Rokok kretek dengan cita rasa kuat khas Surya.</p>
+      <span>Rp25.000</span>
+      <button onclick="addToCart('Surya Pro', 25000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product" data-name="Jarum Coklat" data-price="22000">
+      <img src="img/product_image.jpg" alt="Jarum Coklat">
+      <h3>Jarum Coklat</h3>
+      <p>Rokok khas dengan rasa manis dan lembut.</p>
+      <span>Rp22.000</span>
+      <button onclick="addToCart('Jarum Coklat', 22000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product" data-name="Win Click" data-price="18000">
+      <img src="img/product_image.jpg" alt="Win Click">
+      <h3>Win Click</h3>
+      <p>Rokok dengan kapsul rasa segar yang menyegarkan.</p>
+      <span>Rp18.000</span>
+      <button onclick="addToCart('Win Click', 18000)">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <!-- Keranjang -->
+  <section id="keranjang">
+    <h2>Keranjang Anda</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: <span id="cart-total">Rp0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="kontak">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah toko rokok terpercaya dengan pelayanan cepat dan produk asli. Hubungi kami di pieeyy@theide.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html> 
